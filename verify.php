@@ -1,10 +1,10 @@
 
    
-            <?php 
-                  if(isset($_post["email"]) && isset($_post["code"])){
-$to=$_post["email"];
-$subject=$_post["Verification Code"];
-$message="Your Verification code: " .$_post["code"];
+                 <?php 
+                  if(isset($_POST["email"]) && isset($_POST["code"])){
+$to=$_POST["email"];
+$subject=$_POST["Verification Code"];
+$message="Your Verification code: " .$_POST["code"];
 mail($to,$subject,$message);
 echo "send successfully";}
             ?>
