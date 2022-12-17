@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-  
-<head>
-   
-</head>
-  
-<body>
+
    
             <?php 
                   if(isset($_post["email"]) && isset($_post["code"])){
@@ -16,6 +9,4 @@ mail($to,$subject,$message);
 echo "send successfully";}
             ?>
     
-</body>
-  
-</html>
+
